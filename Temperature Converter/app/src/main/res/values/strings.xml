@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="tempText">Convert</string>
+    <string name="farRadio">Fahrenheit</string>
+    <string name="celcRadio">Celcius</string>
+    <string name="convertButton">Convert</string>
+    <string name="convertField"></string>
+    <string name="input_temperature_here">Input temperature here...</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandrapiotrek.myapplication2.MainActivity">
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/tempText"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/convertField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tempText"
+        android:layout_below="@+id/tempText"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/input_temperature_here"
+        android:text="@string/convertField"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/convertField"
+        android:layout_below="@+id/convertField"
+        android:layout_marginTop="34dp"
+        android:id="@+id/tempGroup">
+
+        <RadioButton
+            android:id="@+id/farRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setTextFar_onClick"
+            android:text="@string/farRadio" />
+
+        <RadioButton
+            android:id="@+id/celcRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setTextCelc_onClick"
+            android:text="@string/celcRadio" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tempGroup"
+        android:layout_below="@+id/tempGroup"
+        android:layout_marginTop="38dp"
+        android:onClick="convert_onClick"
+        android:text="@string/convertButton" />
+
+</RelativeLayout>
