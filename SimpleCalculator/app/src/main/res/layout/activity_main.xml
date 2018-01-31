@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandrapiotrek.simplecalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/inputField"
+        android:text="@string/inputField"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputField"
+        android:layout_below="@+id/inputField"
+        android:layout_marginTop="36dp"
+        android:onClick="add_onClick"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/substract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_button"
+        android:layout_alignBottom="@+id/add_button"
+        android:layout_alignEnd="@+id/inputField"
+        android:onClick="sub_onClick"
+        android:text="@string/substract" />
+
+    <Button
+        android:id="@+id/divide_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/multiply_button"
+        android:layout_alignBottom="@+id/multiply_button"
+        android:layout_alignStart="@+id/substract_button"
+        android:onClick="div_onClick"
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/multiply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_button"
+        android:layout_below="@+id/add_button"
+        android:layout_marginTop="24dp"
+        android:onClick="multi_onClick"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/solve_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/multiply_button"
+        android:layout_below="@+id/divide_button"
+        android:layout_marginTop="50dp"
+        android:width="215dp"
+        android:onClick="solve_onClick"
+        android:text="@string/equals" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/solve_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:onClick="clear_onClick"
+        android:text="@string/reset" />
+</RelativeLayout>
