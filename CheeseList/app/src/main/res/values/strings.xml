@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cheese List</string>
+    <string name="cheeseLabel">TextView</string>
+    <string name="cheeseDesc">TextView</string>
+</resources>
